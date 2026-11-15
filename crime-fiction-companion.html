@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Writing Crime Fiction: Companion Page</title>
+<style>
+:root{--bg:#fbfbf8;--card:#ffffff;--ink:#1d2330;--mute:#566070;--line:#d9dce3;--accent:#2457c5;--on-accent:#ffffff;--a1:#2457c5;--a2:#b4531a;--a3:#2c7a4b;--a4:#8a3fa8;--a1b:#e6edfb;--a2b:#fbeadf;--a3b:#e2f3e8;--a4b:#f1e5f6;--good:#1f7a43;--goodb:#e2f3e8;--bad:#b3261e;--badb:#fbe7e5}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171d;--card:#1c2029;--ink:#e8eaf0;--mute:#a3acbb;--line:#323846;--accent:#7ea6ff;--on-accent:#101521;--a1:#7ea6ff;--a2:#f0a46c;--a3:#6fcf97;--a4:#d6a0ec;--a1b:#1f2a44;--a2b:#3a2a1c;--a3b:#1b3326;--a4b:#33223d;--good:#6fcf97;--goodb:#1b3326;--bad:#ff8a80;--badb:#3d1f1d}}
+:root[data-theme="dark"]{--bg:#14171d;--card:#1c2029;--ink:#e8eaf0;--mute:#a3acbb;--line:#323846;--accent:#7ea6ff;--on-accent:#101521;--a1:#7ea6ff;--a2:#f0a46c;--a3:#6fcf97;--a4:#d6a0ec;--a1b:#1f2a44;--a2b:#3a2a1c;--a3b:#1b3326;--a4b:#33223d;--good:#6fcf97;--goodb:#1b3326;--bad:#ff8a80;--badb:#3d1f1d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.55;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header.top{padding:28px 0 12px}
+header.top .row{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+h1{font-size:1.7rem;line-height:1.2;margin:0 0 4px}
+.sub{color:var(--mute);margin:0}
+h2{font-size:1.3rem;margin:1.6rem 0 .6rem;line-height:1.25}
+h3{font-size:1.05rem;margin:1.1rem 0 .4rem}
+p{margin:.5rem 0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+button{font:inherit;color:inherit;cursor:pointer}
+.btn{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 12px}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+nav.tabbar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+[role=tablist]{display:flex;gap:4px;overflow-x:auto;padding:8px 0}
+[role=tab]{background:transparent;border:1px solid transparent;border-radius:8px;padding:7px 12px;white-space:nowrap;color:var(--mute)}
+[role=tab][aria-selected=true]{background:var(--card);border-color:var(--line);color:var(--ink);font-weight:600;box-shadow:inset 0 -3px 0 var(--accent)}
+[role=tabpanel]{display:none;padding-bottom:48px}
+[role=tabpanel].active{display:block}
+.callout{background:var(--a1b);border-left:5px solid var(--accent);border-radius:8px;padding:12px 16px;margin:14px 0;font-size:1.05rem}
+.jump{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.jump a{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:3px 12px;text-decoration:none;font-size:.92rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+.card h3{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.grid .card{margin:0}
+.grid .card.c1{border-top:4px solid var(--a1)}.grid .card.c2{border-top:4px solid var(--a2)}.grid .card.c3{border-top:4px solid var(--a3)}.grid .card.c4{border-top:4px solid var(--a4)}
+ul,ol{padding-left:1.2rem;margin:.4rem 0}
+li{margin:.2rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--a1b)}
+.tablewrap{overflow-x:auto;border-radius:8px}
+dl{margin:0}
+dt{font-weight:700;margin-top:.7rem}
+dd{margin:.1rem 0 0 0;color:var(--mute)}
+.note{color:var(--mute);font-size:.92rem}
+.tag{display:inline-block;font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:1px 9px;color:var(--mute);margin-left:6px;vertical-align:middle}
+.prompt{white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88rem;margin:8px 0}
+.prompt-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.prompt-head h3{margin:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card ul,.card ol{margin:6px 0 0;padding-left:20px}
+.card li{margin:3px 0}
+.checklist{list-style:none;padding:0}
+.checklist li{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px dashed var(--line)}
+.checklist input{margin-top:5px;width:18px;height:18px;flex:none}
+.scorebar{position:sticky;top:52px;z-index:5;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:12px 0;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+.q h3{margin:0 0 8px;font-size:1rem}
+.opt{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:6px 0}
+.opt:hover:not([disabled]){border-color:var(--accent)}
+.opt.right{background:var(--goodb);border-color:var(--good)}
+.opt.wrong{background:var(--badb);border-color:var(--bad)}
+.opt[disabled]{cursor:default}
+.expl{display:none;margin-top:8px;color:var(--mute);font-size:.95rem}
+.q.done .expl{display:block}
+#cloud{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;justify-content:center;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:12px;line-height:1.1}
+#cloud span{font-weight:700}
+.w0{color:var(--a1)}.w1{color:var(--a2)}.w2{color:var(--a3)}.w3{color:var(--a4)}
+#mind{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px}
+#mind svg{display:block;width:100%;min-width:900px;height:auto}
+.mb{stroke-width:2}.ml{stroke-width:1}
+.m1{fill:var(--a1b);stroke:var(--a1)}.m2{fill:var(--a2b);stroke:var(--a2)}.m3{fill:var(--a3b);stroke:var(--a3)}.m4{fill:var(--a4b);stroke:var(--a4)}
+.mc{fill:var(--accent);stroke:var(--accent)}
+.mtext{fill:var(--ink);font-size:13px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.mtext.b{font-weight:700}
+.mtext.c{fill:var(--on-accent);font-weight:700}
+.conn{fill:none;stroke-width:1.6}
+.cn1{stroke:var(--a1)}.cn2{stroke:var(--a2)}.cn3{stroke:var(--a3)}.cn4{stroke:var(--a4)}
+img.instructor{display:block;width:150px;height:auto;border-radius:12px;border:1px solid var(--line)}
+.linkcard{display:block;text-decoration:none;color:inherit}
+.linkcard:hover{border-color:var(--accent)}
+ul.vlist{list-style:none;margin:6px 0 0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+ul.vlist li{padding:9px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+ul.vlist li:last-child{border-bottom:0}
+ul.vlist .dur{color:var(--muted);font-size:.88rem;white-space:nowrap}
+footer{padding:24px 0 40px;color:var(--mute);font-size:.9rem}
+@media print{
+ header.top .row button,nav.tabbar,.noprint,footer{display:none !important}
+ body{background:#fff;color:#000}
+ [role=tabpanel]{display:none !important}
+ [role=tabpanel].active{display:block !important}
+ .card{break-inside:avoid;border-color:#999}
+ .grid{display:block}.grid .card{margin:0 0 10px}
+ a{color:#000}
+}
+
+/* Visual refresh: editorial learning dashboard */
+:root{
+ --bg:#f6f7fb;--card:#fff;--surface:#fff;--ink:#1c2440;--mute:#626e86;--muted:var(--mute);
+ --line:#e4e8f2;--accent:#584bd8;--on-accent:#fff;
+ --a1:#6554e8;--a2:#db8b4d;--a3:#16957e;--a4:#b06ad0;
+ --a1b:#efedff;--a2b:#fff2e7;--a3b:#e5f7f2;--a4b:#f7ebfc;
+ --good:#198767;--goodb:#e3f7ee;--bad:#c94c53;--badb:#ffedef;
+ --shadow:0 12px 35px rgba(36,45,88,.055);--radius:18px;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --bg:#0d1220;--card:#192237;--surface:#192237;--ink:#f0f3ff;--mute:#abb6cd;--muted:var(--mute);
+ --line:#303b53;--accent:#a79cff;--on-accent:#141226;
+ --a1:#aa9aff;--a2:#f0b17a;--a3:#76dec6;--a4:#dda1f5;
+ --a1b:#302b50;--a2b:#3c2c2b;--a3b:#1a3b38;--a4b:#3d2a4a;
+ --good:#72dfb3;--goodb:#193c32;--bad:#ff929a;--badb:#44262f;
+ --shadow:0 12px 35px rgba(0,0,0,.18);
+}}
+:root[data-theme="dark"]{
+ --bg:#0d1220;--card:#192237;--surface:#192237;--ink:#f0f3ff;--mute:#abb6cd;--muted:var(--mute);
+ --line:#303b53;--accent:#a79cff;--on-accent:#141226;
+ --a1:#aa9aff;--a2:#f0b17a;--a3:#76dec6;--a4:#dda1f5;
+ --a1b:#302b50;--a2b:#3c2c2b;--a3b:#1a3b38;--a4b:#3d2a4a;
+ --good:#72dfb3;--goodb:#193c32;--bad:#ff929a;--badb:#44262f;
+ --shadow:0 12px 35px rgba(0,0,0,.18);
+}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7;letter-spacing:-.006em;background:var(--bg)}
+.wrap{max-width:1160px;padding-left:clamp(18px,4vw,42px);padding-right:clamp(18px,4vw,42px)}
+header.top{position:relative;isolation:isolate;overflow:hidden;padding:54px 0 47px;background:radial-gradient(ellipse 60% 120% at 95% -30%,#7463ff 0,transparent 70%),linear-gradient(125deg,#141d3b 0%,#28245d 56%,#413186 100%);color:#fff}
+header.top:after{content:"";position:absolute;right:-95px;bottom:-280px;width:550px;height:550px;border:1px solid rgba(255,255,255,.16);border-radius:50%;box-shadow:0 0 0 75px rgba(255,255,255,.035),0 0 0 150px rgba(255,255,255,.025);z-index:-1;pointer-events:none}
+header.top .row{align-items:flex-start;gap:26px}
+header.top .row>div{max-width:800px}
+.eyebrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:.69rem;font-weight:800;letter-spacing:.15em;color:#cecaff;margin-bottom:24px}
+.eyebrow-dot{width:8px;height:8px;border-radius:50%;background:#b9ffda;box-shadow:0 0 0 4px rgba(185,255,218,.14)}
+.eyebrow-rule{width:25px;height:1px;background:rgba(255,255,255,.3)}
+header.top h1{font-size:clamp(2.35rem,5.5vw,4.45rem);line-height:1.08;letter-spacing:-.055em;font-weight:830;margin:0 0 19px}
+.hero-highlight{color:#c3bbff}
+header.top .sub{color:#e0dff5;max-width:625px;font-size:clamp(1rem,1.4vw,1.17rem);line-height:1.6}
+.hero-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.hero-meta span{display:inline-flex;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:5px 12px;background:rgba(255,255,255,.07);color:#f1eeff;font-size:.81rem;font-weight:600}
+.hero-source{margin-top:20px!important;color:#bfbde3;font-size:.89rem}
+.hero-source a{color:#fff;text-decoration-color:#9d91ed;text-underline-offset:4px}
+header.top #themeBtn{flex:none;background:rgba(255,255,255,.13);color:#fff;border:1px solid rgba(255,255,255,.32);border-radius:999px;padding:9px 16px;font-size:.83rem;font-weight:650}
+header.top #themeBtn:hover{background:rgba(255,255,255,.23);border-color:#fff}
+nav.tabbar{background:var(--card);box-shadow:0 3px 20px rgba(19,24,54,.045);border-bottom:1px solid var(--line);top:0}
+[role=tablist]{gap:8px;padding:12px 0;scrollbar-width:thin}
+[role=tab]{color:var(--mute);border-radius:10px;padding:10px 16px;font-size:.88rem;font-weight:650;transition:background .2s,color .2s,border-color .2s}
+[role=tab]:hover{background:var(--bg);color:var(--ink)}
+[role=tab][aria-selected=true]{background:var(--a1b);color:var(--accent);border-color:transparent;box-shadow:none}
+main.wrap{padding-top:30px;padding-bottom:50px}
+[role=tabpanel]{animation:panel-in .24s ease-out;min-height:45vh}
+@keyframes panel-in{from{opacity:.5;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+h2{font-size:clamp(1.35rem,2.1vw,1.65rem);line-height:1.3;letter-spacing:-.032em;margin:34px 0 15px;font-weight:790}
+h3{font-size:1.07rem;letter-spacing:-.015em;line-height:1.4}
+p{margin:.65rem 0}a{text-underline-offset:3px;text-decoration-thickness:1px}
+.card,.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin:15px 0;box-shadow:var(--shadow)}
+.card{transition:border-color .18s,box-shadow .18s,transform .18s}
+.card:hover{border-color:color-mix(in srgb,var(--accent) 30%,var(--line));box-shadow:0 14px 30px rgba(35,35,80,.085)}
+.card h3{font-weight:760;margin:0 0 9px}
+.card p{color:var(--mute)}
+.card p:last-child{margin-bottom:0}
+.grid,.cards{gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr))}
+.grid .card.c1,.grid .card.c2,.grid .card.c3,.grid .card.c4{border-top:1px solid var(--line);position:relative;overflow:hidden}
+.grid .card.c1:before,.grid .card.c2:before,.grid .card.c3:before,.grid .card.c4:before{content:"";display:block;width:33px;height:5px;border-radius:99px;background:var(--a1);margin-bottom:18px}
+.grid .card.c2:before{background:var(--a2)}.grid .card.c3:before{background:var(--a3)}.grid .card.c4:before{background:var(--a4)}
+.callout{background:linear-gradient(110deg,var(--a1b),var(--card));border:1px solid color-mix(in srgb,var(--accent) 20%,var(--line));border-left:5px solid var(--accent);border-radius:var(--radius);padding:22px 26px;margin:0 0 22px;font-size:1.13rem;line-height:1.65;box-shadow:var(--shadow)}
+.jump{margin:18px 0 24px;gap:9px}
+.jump a{padding:7px 14px;border-radius:9px;background:var(--card);font-size:.83rem;font-weight:650;color:var(--mute)}
+.jump a:hover{color:var(--accent);border-color:var(--accent);background:var(--a1b)}
+.btn{background:var(--card);border-radius:10px;padding:9px 15px;font-size:.88rem;font-weight:700;transition:all .2s}
+.btn.primary{background:#584bd8;color:#fff;border-color:#584bd8;box-shadow:0 4px 12px rgba(88,75,216,.2)}
+.btn:hover{transform:translateY(-1px)}
+.tablewrap{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:separate;border-spacing:0}th,td{border:0;border-bottom:1px solid var(--line);padding:14px 17px;line-height:1.6}tr:last-child td{border-bottom:0}th{background:var(--a1b);font-size:.81rem;letter-spacing:.025em;color:var(--ink)}tbody tr:hover{background:color-mix(in srgb,var(--a1b) 35%,transparent)}
+dt{color:var(--ink);font-weight:760;margin-top:18px}dd{padding-bottom:13px;border-bottom:1px solid var(--line)}
+.note{color:var(--mute);font-size:.9rem}
+.prompt{padding:17px 18px;border-radius:12px;background:var(--bg);line-height:1.65;border-color:var(--line)}
+.prompt-head{align-items:center;gap:12px}.prompt-head h3{font-size:1.06rem}
+.scorebar{top:73px;border-radius:13px;box-shadow:var(--shadow);padding:13px 17px}
+.q{padding:21px 24px}.q h3{font-size:1.07rem;line-height:1.5;margin-bottom:13px}
+.opt{border-radius:11px;padding:12px 15px;margin:8px 0;transition:background .2s,border-color .2s,transform .2s}
+.opt:hover:not([disabled]){background:var(--a1b);transform:translateX(3px)}
+#cloud,#mind{border-radius:var(--radius);padding:25px;box-shadow:var(--shadow)}
+#cloud{gap:11px 19px;line-height:1.4}#cloud span{transition:transform .2s;cursor:default}#cloud span:hover{transform:scale(1.09)}
+ul.vlist{background:var(--card);box-shadow:var(--shadow);overflow:hidden;border-radius:14px}
+ul.vlist li{padding:13px 18px;align-items:center}ul.vlist li:hover{background:var(--bg)}
+ul.vlist a{text-decoration:none;font-weight:550}ul.vlist a:hover{text-decoration:underline}ul.vlist .dur{color:var(--mute)}
+img.instructor{width:105px;border-radius:50%;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+footer{border-top:1px solid var(--line);padding:27px 0 42px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:640px){header.top{padding:37px 0 34px}header.top .row{flex-direction:column-reverse;gap:20px}header.top #themeBtn{align-self:flex-end}.eyebrow{font-size:.6rem;margin-bottom:17px}header.top h1{font-size:clamp(2.25rem,10vw,3.4rem)}.hero-meta{gap:7px}.hero-meta span{font-size:.73rem;padding:4px 9px}main.wrap{padding-top:20px}h2{margin-top:28px}.card,.q{padding:18px}.callout{padding:19px;font-size:1rem}.scorebar{top:68px}[role=tab]{padding:9px 12px;font-size:.82rem}.tablewrap{margin-right:-2px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media print{header.top{background:#fff!important;color:#000!important;padding:12px 0}header.top h1,.hero-highlight{color:#000!important}.hero-meta,.eyebrow,.hero-source{display:none!important}main.wrap{padding-top:0}.card,.q,.callout{box-shadow:none!important}body{background:#fff!important}nav.tabbar{display:none!important}}
+
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <div class="row">
+  <div>
+   <div class="eyebrow"><span class="eyebrow-dot"></span> INTERACTIVE LEARNING COMPANION <span class="eyebrow-rule"></span> WRITING COURSE</div>
+   <h1>Writing<br><span class="hero-highlight">Crime Fiction.</span></h1>
+   <p class="sub">A practical companion to the craft of mysteries and thrillers, from setting to submission.</p>
+   <div class="hero-meta"><span>✦ Reading notes</span><span>◷ Quick reference</span><span>✓ Practice quiz</span></div>
+   <p class="hero-source">Based on Rosemary Rowe’s <em>Masterclass: Writing Crime Fiction</em> (John Murray Learning, 2014)</p>
+  </div>
+  <button class="btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">Theme: auto</button>
+ </div>
+</div></header>
+<nav class="tabbar" aria-label="Companion sections"><div class="wrap">
+ <div role="tablist" aria-label="Companion sections" id="tablist">
+     <button role="tab" id="tab-summary" aria-controls="panel-summary" aria-selected="true" tabindex="0" data-hash="summary">Summary</button>
+     <button role="tab" id="tab-videos" aria-controls="panel-videos" aria-selected="false" tabindex="-1" data-hash="videos">Videos</button>
+     <button role="tab" id="tab-cheat" aria-controls="panel-cheat" aria-selected="false" tabindex="-1" data-hash="cheat">Cheat sheet</button>
+  <button role="tab" id="tab-prompts" aria-controls="panel-prompts" aria-selected="false" tabindex="-1" data-hash="prompts">Prompts</button>
+  <button role="tab" id="tab-quiz" aria-controls="panel-quiz" aria-selected="false" tabindex="-1" data-hash="quiz">Quiz</button>
+  <button role="tab" id="tab-visuals" aria-controls="panel-visuals" aria-selected="false" tabindex="-1" data-hash="visuals">Word cloud and mindmap</button>
+  <button role="tab" id="tab-courses" aria-controls="panel-courses" aria-selected="false" tabindex="-1" data-hash="courses">Other courses</button>
+ </div>
+</div></nav>
+
+<main class="wrap">
+    <!-- SUMMARY -->
+<section role="tabpanel" id="panel-summary" aria-labelledby="tab-summary" class="active" tabindex="0">
+ <div class="callout"><strong>The big idea:</strong> a crime novel is a promise to the reader that a serious crime will drive the story, that justice will be reached through real effort, and that the author will play fair, so every technique in the book serves that promise.</div>
+ <div class="jump" aria-label="Jump to a section in this summary">
+  <a href="#s-principles" data-jump="s-principles">Principles</a>
+  <a href="#s-frameworks" data-jump="s-frameworks">Frameworks</a>
+  <a href="#s-chapters" data-jump="s-chapters">Chapter by chapter</a>
+  <a href="#s-examples" data-jump="s-examples">Techniques in action</a>
+  <a href="#s-cautions" data-jump="s-cautions">Cautions</a>
+  <a href="#s-glossary" data-jump="s-glossary">Glossary</a>
+ </div>
+ <p>This page summarises Rosemary Rowe’s guide to writing crime fiction, which runs from choosing a subgenre to sending a manuscript to an agent. It is written in my own words and does not replace the book, which holds the full exercises, workshop extracts and examples.</p>
+
+ <h2 id="s-principles">Principles</h2>
+ <div class="card">
+  <ol>
+   <li><strong>Forget fixed rules, but learn the conventions.</strong> No formula guarantees success, yet most new writers sell more easily when they respect the genre’s expectations.</li>
+   <li><strong>Persevere, practise and read.</strong> A writer is someone who writes regularly, reads widely (especially the kind of book they want to write) and does not quit.</li>
+   <li><strong>Write the kind of book you like to read.</strong> Your own taste is the best guide to which subgenre suits you.</li>
+   <li><strong>Raise the stakes.</strong> The crime, usually murder, must carry heavy physical consequences for the victim, and it must drive the plot.</li>
+   <li><strong>Play fair.</strong> Everything needed to solve the crime must reach the reader at the same time as the sleuth, even if it is hidden in plain sight.</li>
+   <li><strong>Make the solution earned.</strong> Sleuths and rescuers must work, by thinking or by acting, rather than relying on luck, intuition or the supernatural. Comic crime is the main exception.</li>
+   <li><strong>Less is more.</strong> Use fewer adjectives and adverbs, shorter sentences and plain speech tags, and keep research and back story in reserve.</li>
+   <li><strong>Get the facts right.</strong> Crime readers notice errors because details may be clues, so check what you think you know.</li>
+   <li><strong>Revise, then stop and submit.</strong> Cut rather than add, do a technical edit, and send the finished book out.</li>
+  </ol>
+ </div>
+
+ <h2 id="s-frameworks">The main frameworks</h2>
+ <div class="grid">
+  <div class="card c1"><h3>Four requirements of the genre</h3><p>The novel is about a crime, preferably murder. The crime drives the plot. The crime will out and some form of justice follows. The author plays fair with the reader.</p></div>
+  <div class="card c2"><h3>Mystery or thriller</h3><p>Mysteries (whodunnits, howdunnits, whydunnits) are about solving a crime. Thrillers are about preventing one, and the reader knows the threat and the victim from the start.</p></div>
+  <div class="card c3"><h3>Four channels of imagination</h3><p>Readers imagine through sight, sound, feeling (including touch, smell and taste) and abstract facts or comparisons. The author says these differ between people, so use all four, especially the ones you tend to neglect.</p></div>
+  <div class="card c4"><h3>Five registers of speech</h3><p>Registers run from intimate to literary. Dialogue should mostly imitate the casual and informative registers, with a few light cues, because almost nobody speaks in formal written English.</p></div>
+  <div class="card c1"><h3>The clothes line</h3><p>The opening crime and the solution are the posts at each end. Spaced “props”, such as major incidents, low points and new characters, keep the middle from sagging.</p></div>
+  <div class="card c2"><h3>The conjuror’s method</h3><p>Hide clues the way a magician does. Use distraction (bury a clue among similar details, or follow it with action) and sleight of hand (an uncharacteristic action or a slip of knowledge).</p></div>
+ </div>
+
+ <h3>Chapter by chapter: what to aim for</h3>
+ <div class="tablewrap" id="s-chapters"><table>
+  <thead><tr><th>Stage</th><th>What to aim for</th><th>What to avoid</th></tr></thead>
+  <tbody>
+   <tr><td>1. Genre</td><td>Pick a subgenre you enjoy reading. A novel of 60,000 to 90,000 words is the usual target.</td><td>A theft-only plot, a story set around banks or firms, or mixing in fantasy elements.</td></tr>
+   <tr><td>2. Settings</td><td>Establish time and place fast. Use people, objects and action to evoke a scene, and add cues for every sense.</td><td>Piling up adjectives or leaving readers to assume the wrong era.</td></tr>
+   <tr><td>3. Characters</td><td>Reveal people through actions, speech, thoughts and how others react. Make the cast large enough to create suspects.</td><td>Cardboard figures, characters copied from real people, or wholly evil villains.</td></tr>
+   <tr><td>4. Dialogue</td><td>Make speech part of the action, give each voice its own register and rhythm, and use plain speech tags.</td><td>Telling characters things they already know, or fancy speech verbs and adverbs.</td></tr>
+   <tr><td>5. Plot</td><td>Start with the crime or threat. Plan at least three major incidents, a few low points and useful subplots.</td><td>Back story at the start, a middle with nothing happening, or an ending that arrives by chance.</td></tr>
+   <tr><td>6. Style and viewpoint</td><td>Choose one viewpoint per scene and match the style to that character. Read aloud for rhythm.</td><td>An all-knowing narrator who withholds information, or showy prose.</td></tr>
+   <tr><td>7. Clues</td><td>Use a variety of clue types and space them out. Make final explanations short and broken up.</td><td>Unfair secret clues, clues forgotten after chapter one, or too many clues at once.</td></tr>
+   <tr><td>8. Facts</td><td>Research the background first and spot-check later. Know about half as much again as you tell.</td><td>Lecturing, trusting one website, or guessing at forensics and weapons.</td></tr>
+   <tr><td>9. Writing and editing</td><td>Get words on the page, track continuity, revise to cut, then do a technical edit.</td><td>Polishing the first page forever, or leaving the finished book in a drawer.</td></tr>
+   <tr><td>10. Publication</td><td>Finish the novel, then approach suitable agents with a tidy package and a short synopsis.</td><td>Sending part-finished work, mass mailings, or giving up after rejection.</td></tr>
+  </tbody>
+ </table></div>
+
+ <h2 id="s-examples">Techniques in action</h2>
+ <p class="note">These are my own short illustrations of the book’s techniques, not extracts from it. The book’s workshop passages come from published novels and are best read in full.</p>
+ <div class="card"><h3>Hiding a clue in plain sight</h3><p>The book suggests describing a room with an adjective on nearly everything, so a poker beside the fireplace slips past. Place the clue about three-quarters of the way through the description, and end the list on something striking.</p></div>
+ <div class="card"><h3>Showing character without a pen-portrait</h3><p>Rather than calling a man domineering, show his wife agreeing with everything he says, then speaking confidently once he is gone. The reader draws the conclusion, and may start to suspect her.</p></div>
+ <div class="card"><h3>Setting a scene in a line or two</h3><p>An opening that begins with movement, such as a dog slipping under a rotting gate, raises questions straight away and hints at the place. A few chosen objects or a person in the scene can do the work of a paragraph of adjectives.</p></div>
+ <div class="card"><h3>Spreading out the solution</h3><p>A progress meeting among investigators lets the team sum up what is known and what is still missing. That moves some detecting earlier in the book and leaves a shorter explanation at the end.</p></div>
+ <div class="card"><h3>Turning a rich vein of facts into drip-feed</h3><p>If you have found many period details, use a few early to place the reader, hold the rest back, and keep one fact per paragraph. If a detail is a clue, follow it with an even more striking one.</p></div>
+ <div class="card"><h3>The five-step outline</h3><p>Write one sentence for the plot, expand the crime, add a sentence for each suspect, expand the sleuth’s path, then shuffle the sentences to spread information through the book. In a thriller the shuffle is unnecessary.</p></div>
+
+ <h2 id="s-cautions">Cautions</h2>
+ <div class="card"><ul>
+  <li><strong>Publishing advice is dated.</strong> The book was published in 2014. It assumes postal submissions, printed manuscripts with stamped return envelopes and a fixed list of directories. Self-publishing, e-submission and agent practices have changed, so check current guidelines before you submit.</li>
+  <li><strong>Science claims are the author’s summary.</strong> The explanation of brain regions and how readers imagine scenes is simplified, and the statement that one reader in four relies on a different channel should be read as the author’s claim. Treat it as a useful writing habit rather than established science.</li>
+  <li><strong>Statistics and market claims.</strong> The book cites a 2011 survey of mystery readers, claims about real-world murders and statements about newcomers’ chances of publication. Verify any figure before repeating it.</li>
+  <li><strong>Examples are of their time.</strong> Some suggestions about “don’t” plots, stereotypes and police procedure reflect British genre habits of the period. Use them as starting points, then read recent crime novels in your subgenre.</li>
+  <li><strong>Real-world facts.</strong> The author urges checking forensic timings, poisons, weapons and transport. Do not rely on a novel, film or single website for those details.</li>
+ </ul></div>
+
+ <h2 id="s-glossary">Glossary</h2>
+ <dl>
+  <dt>Whodunnit</dt><dd>A mystery whose puzzle is the identity of the killer, usually with a cast of suspects.</dd>
+  <dt>Howdunnit</dt><dd>A mystery focused on how an apparently impossible or technical crime was carried out. Includes locked-room and forensic fiction.</dd>
+  <dt>Whydunnit</dt><dd>A story concerned with the psychology and motive of the killer.</dd>
+  <dt>Crime thriller</dt><dd>A story in which the reader knows the threat and the victim, and tension comes from whether it will be prevented.</dd>
+  <dt>Cosy</dt><dd>A gentle, often rural whodunnit with little on-page violence, where community tensions matter.</dd>
+  <dt>Police procedural</dt><dd>A story told through the work of a police officer, using realistic methods and often a maverick lead.</dd>
+  <dt>Noir and hard-boiled</dt><dd>Gritty, urban crime with cynical tone and frequent violence. Noir often has a loner fighting the system.</dd>
+  <dt>Sleuth</dt><dd>The character who solves the crime, who may be a professional or an amateur.</dd>
+  <dt>Sidekick</dt><dd>A companion to the sleuth who lets clues and theories be discussed with the reader.</dd>
+  <dt>Walk-on character</dt><dd>Someone who appears only for the job they do, such as a taxi driver, who needs at most one memorable trait.</dd>
+  <dt>Viewpoint character</dt><dd>The character through whose eyes and thoughts a scene is told.</dd>
+  <dt>Eye-of-god viewpoint</dt><dd>An all-knowing narrator who is not a character. The book advises using it only briefly, for effect.</dd>
+  <dt>Register</dt><dd>The level of formality and complexity of language that suits a speaker, listener and context.</dd>
+  <dt>Throwaway</dt><dd>A small piece of apparently trivial dialogue that carries a clue.</dd>
+  <dt>Red herring</dt><dd>A false trail that leads the sleuth and reader towards the wrong conclusion.</dd>
+  <dt>False dawn</dt><dd>A moment of apparent progress or rescue that later fails or proves partial.</dd>
+  <dt>Suspended clue</dt><dd>A clue recognised as important but not explainable until another step, such as a lab result, takes place.</dd>
+  <dt>Misdirection and misinformation</dt><dd>Misdirection plants a false impression. Misinformation is a character’s outright lie. Only characters may lie, never the author’s voice.</dd>
+  <dt>Chekhov’s gun</dt><dd>The principle that anything prominent introduced early must later be used.</dd>
+  <dt>Synopsis</dt><dd>A short selling summary of the novel that shows the characters, the conflicts and that a plot can be sustained.</dd>
+  <dt>Technical edit</dt><dd>A final pass that corrects spelling, punctuation and typos without changing the content.</dd>
+ </dl>
+
+</section>
+
+<!-- VIDEOS -->
+<section role="tabpanel" id="panel-videos" aria-labelledby="tab-videos" hidden>
+    <h2 style="margin-top:0">Videos</h2>
+    <p style="color:var(--muted)">The lesson videos in <a href="https://learning.oreilly.com/course/generative-ai-for/0642572079673/" target="_blank" rel="noopener noreferrer">Generative AI for Enhanced Project Management</a>, David Griffiths's video course on O'Reilly, listed by module. The links open on O'Reilly and need an account with access to the course. Durations are shown where the course page gave them.</p>
+    <h3 style="margin-top:22px">Introduction</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video371996" target="_blank" rel="noopener noreferrer">Course Introduction</a> <span class="dur">1m 19s</span></li>
+    </ul>
+    <h3 style="margin-top:22px">Module 1: The Basics of Chatbots</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372000" target="_blank" rel="noopener noreferrer">Lesson 1.1: Using Chatbots</a></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372004" target="_blank" rel="noopener noreferrer">Lesson 1.2: Writing Effective Prompts</a></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372008" target="_blank" rel="noopener noreferrer">Lesson 1.3: Exercise: Prompts</a> <span class="dur">1m</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372012" target="_blank" rel="noopener noreferrer">Lesson 1.4: Exercise: Prompts (Sample Solution)</a> <span class="dur">1m 54s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372016" target="_blank" rel="noopener noreferrer">Lesson 1.5: The &quot;Repeat and Refine&quot; Technique</a> <span class="dur">5m 42s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372020" target="_blank" rel="noopener noreferrer">Lesson 1.6: FAQ (1)</a> <span class="dur">5m 50s</span></li>
+    </ul>
+    <h3 style="margin-top:22px">Module 2: Scoping Work</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372024" target="_blank" rel="noopener noreferrer">Lesson 2.1: Scope Introduction</a> <span class="dur">3m 44s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372028" target="_blank" rel="noopener noreferrer">Lesson 2.2: Defining Scope</a> <span class="dur">8m 42s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372032" target="_blank" rel="noopener noreferrer">Lesson 2.3: Exercise: Scope</a> <span class="dur">42s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372036" target="_blank" rel="noopener noreferrer">Lesson 2.4: Exercise: Scope (Solution)</a> <span class="dur">1m 44s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372040" target="_blank" rel="noopener noreferrer">Lesson 2.5: FAQ (2)</a> <span class="dur">5m 14s</span></li>
+    </ul>
+    <h3 style="margin-top:22px">Module 3: Stories</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372044" target="_blank" rel="noopener noreferrer">Lesson 3.1: Creating Stories</a> <span class="dur">9m 5s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372048" target="_blank" rel="noopener noreferrer">Lesson 3.2: FAQ (3)</a> <span class="dur">4m 44s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372052" target="_blank" rel="noopener noreferrer">Lesson 3.3: Exercise: Stories</a> <span class="dur">1m 25s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372056" target="_blank" rel="noopener noreferrer">Lesson 3.4: Exercise: Stories (Sample Solution)</a> <span class="dur">3m 4s</span></li>
+    </ul>
+    <h3 style="margin-top:22px">Module 4: Acceptance Criteria</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372060" target="_blank" rel="noopener noreferrer">Lesson 4.1: Defining Acceptance Criteria</a> <span class="dur">8m 37s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372064" target="_blank" rel="noopener noreferrer">Lesson 4.2: Building a Knowledge Base</a> <span class="dur">6m 34s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372068" target="_blank" rel="noopener noreferrer">Lesson 4.3: Exercise: Acceptance Criteria</a> <span class="dur">47s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372072" target="_blank" rel="noopener noreferrer">Lesson 4.4: Exercise: Acceptance Criteria (Solution)</a> <span class="dur">1m 26s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372076" target="_blank" rel="noopener noreferrer">Lesson 4.5: FAQ (4)</a> <span class="dur">5m 55s</span></li>
+    </ul>
+    <h3 style="margin-top:22px">Module 5: Using Project Tools</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372080" target="_blank" rel="noopener noreferrer">Lesson 5.1: Exporting Your Plan</a></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372084" target="_blank" rel="noopener noreferrer">Lesson 5.2: FAQ (5)</a> <span class="dur">3m 58s</span></li>
+    </ul>
+    <h3 style="margin-top:22px">Module 6: Managing Feedback</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372088" target="_blank" rel="noopener noreferrer">Lesson 6.1: Introduction to Feedback</a> <span class="dur">4m 54s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372092" target="_blank" rel="noopener noreferrer">Lesson 6.2: Feedback Questions</a> <span class="dur">3m 18s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372096" target="_blank" rel="noopener noreferrer">Lesson 6.3: Retrospectives</a> <span class="dur">4m 35s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372100" target="_blank" rel="noopener noreferrer">Lesson 6.4: Sentiment Analysis</a> <span class="dur">6m 42s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372104" target="_blank" rel="noopener noreferrer">Lesson 6.5: FAQ (6)</a> <span class="dur">2m 53s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372108" target="_blank" rel="noopener noreferrer">Lesson 6.6: Exercise: Feedback</a> <span class="dur">45s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372112" target="_blank" rel="noopener noreferrer">Lesson 6.7: Exercise: Feedback (Sample Solution)</a> <span class="dur">2m 41s</span></li>
+    </ul>
+    <h3 style="margin-top:22px">Module 7: Risks and Mitigations</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372116" target="_blank" rel="noopener noreferrer">Lesson 7.1: Finding Risks</a> <span class="dur">4m 43s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372120" target="_blank" rel="noopener noreferrer">Lesson 7.2: Calculating Risks</a> <span class="dur">3m 31s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372124" target="_blank" rel="noopener noreferrer">Lesson 7.3: Mitigating Risks</a> <span class="dur">2m 46s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372128" target="_blank" rel="noopener noreferrer">Lesson 7.4: Exercise: Risks</a> <span class="dur">47s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372132" target="_blank" rel="noopener noreferrer">Lesson 7.5: Exercise: Risks (Sample Solution)</a> <span class="dur">2m 14s</span></li>
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372136" target="_blank" rel="noopener noreferrer">Lesson 7.6: FAQ (7)</a> <span class="dur">4m 8s</span></li>
+    </ul>
+    <h3 style="margin-top:22px">Module 8: What&#x27;s Next?</h3><ul class="vlist">
+        <li><a href="https://learning.oreilly.com/videos/-/0642572079673/0642572079673-video372140" target="_blank" rel="noopener noreferrer">Lesson 8.1: What Next?</a> <span class="dur">5m 28s</span></li>
+    </ul>
+</section>
+
+<!-- CHEAT SHEET -->
+<section role="tabpanel" id="panel-cheat" aria-labelledby="tab-cheat" tabindex="0">
+ <div class="noprint" style="display:flex;gap:8px;align-items:center;margin:14px 0;flex-wrap:wrap">
+  <button class="btn primary" type="button" id="printBtn">Print / save PDF</button>
+  <span class="note">Prints only this tab.</span>
+ </div>
+ <div class="grid">
+  <div class="card c1"><h3>The three habits</h3><ul><li>Persevere</li><li>Practise daily, even briefly</li><li>Make time to read your genre</li><li>Keep early scribbles for editing later</li></ul></div>
+  <div class="card c2"><h3>Four requirements</h3><ol><li>A crime, preferably murder</li><li>The crime drives the plot</li><li>The crime will out; justice follows</li><li>The author plays fair</li></ol></div>
+  <div class="card c3"><h3>Subgenres</h3><ul><li>Mysteries: whodunnit, howdunnit, whydunnit</li><li>Thrillers, including psychological</li><li>Specialist: exotic, historical, comic</li><li>Choose what you enjoy reading</li></ul></div>
+  <div class="card c4"><h3>Settings</h3><ul><li>Say when and where, fast</li><li>Use sight, sound, feeling and facts</li><li>Few adjectives, spread out</li><li>Short sentences; people, things, action</li><li>Sketch a map if you need one</li></ul></div>
+  <div class="card c1"><h3>Characters</h3><ul><li>Reveal by action, speech, thoughts, reactions</li><li>Walk-ons: one memorable trait</li><li>Keep the suspect list to about five or six</li><li>Give villains a human side</li><li>Keep descriptions consistent</li></ul></div>
+  <div class="card c2"><h3>Dialogue</h3><ul><li>It is part of the action</li><li>Pick a register that fits the speaker</li><li>Give each voice its own rhythm and vocabulary</li><li>Use “said”; few adverbs</li><li>Try the tagless test</li></ul></div>
+  <div class="card c3"><h3>Plot</h3><ol><li>Start with the crime or threat</li><li>Introduce sleuth early and killer by chapter four</li><li>At least three major incidents</li><li>Space low points and false dawns</li><li>Add subplots and chapter-end hooks</li></ol></div>
+  <div class="card c4"><h3>Viewpoint</h3><ul><li>One viewpoint per scene</li><li>Two or three viewpoint characters at most</li><li>Match style to the thinker</li><li>Use eye-of-god only briefly</li><li>Thrillers often alternate victim and threat</li></ul></div>
+  <div class="card c1"><h3>Style</h3><ul><li>Short, crisp lines for fast action</li><li>Read aloud for rhythm</li><li>Avoid clichés; invent fresh comparisons</li><li>“Murder your darlings”</li></ul></div>
+  <div class="card c2"><h3>Clue types</h3><ul><li>Overt, missing object, suspended</li><li>Subtle, misdirection, misinformation</li><li>Ambiguous, logical, message</li><li>Mix them and space them out</li></ul></div>
+  <div class="card c3"><h3>Hiding a clue</h3><ol><li>Bury it among details</li><li>Pair it with an overt clue</li><li>Follow spoken clues with action</li><li>Use an uncharacteristic act or word</li><li>Never let the author lie</li></ol></div>
+  <div class="card c4"><h3>Research</h3><ul><li>Background first, spot checks later</li><li>Know about half as much again as you tell</li><li>Cross-check the internet</li><li>Ask people, libraries, archives, museums</li><li>If unsure, hint rather than invent</li></ul></div>
+  <div class="card c1"><h3>Revise</h3><ul><li>Cut rather than add</li><li>Halve long sentences</li><li>Hunt adverbs and adjectives</li><li>Check continuity and credibility</li><li>Finish with a technical edit</li></ul></div>
+  <div class="card c2"><h3>Submit</h3><ul><li>Finish the novel first</li><li>Target agents who handle crime</li><li>Send three chapters, synopsis, letter, return postage</li><li>Keep writing the next book</li></ul></div>
+ </div>
+
+ <h2>Before you submit your manuscript</h2>
+ <ul class="checklist" id="checklist"></ul>
+</section>
+
+<!-- PROMPTS -->
+<section role="tabpanel" id="panel-prompts" aria-labelledby="tab-prompts" tabindex="0">
+ <p class="note" style="margin-top:14px">These writing prompts are original exercises that put the book’s techniques into practice. They are not the book’s own exercises, so use them alongside the chapters. Square brackets mark things to replace.</p>
+ <div id="promptList"></div>
+</section>
+
+<!-- QUIZ -->
+<section role="tabpanel" id="panel-quiz" aria-labelledby="tab-quiz" tabindex="0">
+ <div class="scorebar" id="scorebar" aria-live="polite">
+  <span id="scoreText">Score: 0 of 0 answered</span>
+  <button class="btn" type="button" id="restartBtn">Start again</button>
+ </div>
+ <div id="quizList"></div>
+ <div class="card" id="quizResult" style="display:none"></div>
+</section>
+
+<!-- VISUALS -->
+<section role="tabpanel" id="panel-visuals" aria-labelledby="tab-visuals" tabindex="0">
+ <h2>Word cloud</h2>
+ <p class="note">Built from the book text. Spoken filler and common function words were removed; larger means more frequent.</p>
+ <div id="cloud" role="list" aria-label="Most frequent content words"></div>
+ <h2>Mindmap</h2>
+ <p class="note">The book’s structure at a glance. Scroll sideways on a small screen.</p>
+ <div id="mind"></div>
+</section>
+
+<!-- OTHER COURSES -->
+<section role="tabpanel" id="panel-courses" aria-labelledby="tab-courses" tabindex="0">
+ <div style="margin-top:16px">
+  <img class="instructor" src="data:image/jpeg;base64,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" alt="David Griffiths smiling with folded arms, wearing a grey plug-shaped hat with a speech label reading Plug hat" width="150" height="150">
+  <h2>More from the instructor</h2>
+ </div>
+ <h3 style="margin-top:22px">Upcoming live courses</h3>
+ <div class="cards">
+     <div class="card"><strong>Nov 5, 2026</strong><br><a href="https://learning.oreilly.com/live-events/ai-assisted-research/0642572399726/0642572399719" target="_blank" rel="noopener noreferrer">AI-Assisted Research</a> (1 hour)</div>
+     <div class="card"><strong>Nov 12, 2026</strong><br><a href="https://learning.oreilly.com/live-events/fundamentals-of-technical-writing/0636920077082/0790145079029/" target="_blank" rel="noopener noreferrer">Fundamentals of Technical Writing</a></div>
+     <div class="card"><strong>Nov 18, 2026</strong><br><a href="https://learning.oreilly.com/live-events/generative-ai-to-improve-your-writing/0636920097362/0642572263867/" target="_blank" rel="noopener noreferrer">Generative AI to Improve Your Writing</a></div>
+ </div>
+
+ <h3 style="margin-top:22px">Video courses</h3>
+ <div class="cards">
+     <div class="card"><a href="https://learning.oreilly.com/course/generative-ai-to/0642572079505/" target="_blank" rel="noopener noreferrer">Generative AI to Improve Your Productivity</a><br><span style="color:var(--muted)">2 hrs 45 mins</span></div>
+     <div class="card"><a href="https://learning.oreilly.com/videos/generative-ai-for/0642572079673/" target="_blank" rel="noopener noreferrer">Generative AI for Enhanced Project Management</a><br><span style="color:var(--muted)">2 hrs 30 mins</span></div>
+     <div class="card"><a href="https://learning.oreilly.com/videos/business-writing-essentials/0636920954453/" target="_blank" rel="noopener noreferrer">Business Writing Essentials</a><br><span style="color:var(--muted)">90 mins</span></div>
+ </div>
+
+ <h3 style="margin-top:22px">Books</h3>
+ <div class="cards">
+     <div class="card"><a href="https://www.amazon.com/React-Cookbook-Recipes-Mastering-Framework/dp/1492085847/" target="_blank" rel="noopener noreferrer">React Cookbook: Recipes for Mastering the React Framework</a></div>
+     <div class="card"><a href="https://www.amazon.com/Head-First-Android-Development-Learners/dp/149207652X/" target="_blank" rel="noopener noreferrer">Head First Android Development</a></div>
+     <div class="card"><a href="https://www.amazon.com/Head-First-Kotlin-Brain-Friendly-Guide-ebook/dp/B07NPZ21QP/" target="_blank" rel="noopener noreferrer">Head First Kotlin</a></div>
+     <div class="card"><a href="https://www.amazon.com/Things-Every-Java-Programmer-Should/dp/1491952695/" target="_blank" rel="noopener noreferrer">97 Things Every Java Programmer Should Know</a></div>
+     <div class="card"><a href="https://www.amazon.com/Head-First-C-David-Griffiths/dp/1449399916/" target="_blank" rel="noopener noreferrer">Head First C</a></div>
+     <div class="card"><a href="https://www.amazon.com/Head-First-Programming-learners-programming-ebook/dp/B00CBM1WFW/" target="_blank" rel="noopener noreferrer">Head First Programming</a></div>
+ </div>
+
+ <h3 style="margin-top:22px">Elsewhere</h3>
+ <div class="cards">
+     <div class="card"><a href="https://www.oreilly.com/pub/au/3371" target="_blank" rel="noopener noreferrer">Author page (O'Reilly)</a></div>
+     <div class="card"><a href="https://www.linkedin.com/in/dogriffiths/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+     <div class="card"><a href="https://github.com/dogriffiths" target="_blank" rel="noopener noreferrer">GitHub: dogriffiths</a></div>
+     <div class="card"><a href="https://www.youtube.com/@DavidGriffithsEsq" target="_blank" rel="noopener noreferrer">YouTube channel</a></div>
+ </div>
+ <p class="note" style="margin-top:20px">Copied from the instructor's Linktree on the day this page was built. Course dates and listings change, so use the Linktree link above for the current list.</p>
+ <a class="card linkcard" href="https://linktr.ee/dogriffiths" target="_blank" rel="noopener noreferrer"><h3>Instructor's Linktree</h3><p class="note">linktr.ee/dogriffiths. Opens in a new tab.</p></a>
+</section>
+
+</main>
+<footer><div class="wrap">Companion page for readers. The summary paraphrases the book and does not replace it.</div></footer>
+
+<script type="application/json" id="cloudData">[["character", 322], ["crime", 271], ["reader", 182], ["clue", 168], ["writing", 152], ["plot", 129], ["scene", 105], ["story", 102], ["novel", 102], ["viewpoint", 92], ["dialogue", 84], ["sleuth", 83], ["setting", 82], ["writer", 78], ["action", 63], ["author", 61], ["paragraph", 59], ["thriller", 58], ["agent", 58], ["victim", 55], ["mystery", 55], ["narrative", 54], ["murder", 53], ["corpse", 52], ["genre", 52], ["description", 50], ["police", 49], ["information", 49], ["manuscript", 48], ["detail", 46], ["sentence", 46], ["research", 45], ["adjective", 45], ["technique", 44], ["opening", 44], ["register", 44], ["style", 37], ["motive", 37], ["fiction", 36], ["publisher", 36], ["check", 36], ["rule", 34], ["suspect", 34], ["question", 34], ["speech", 33], ["solution", 30], ["murderer", 28], ["subplot", 27], ["killer", 27], ["tension", 26], ["threat", 26], ["voice", 25], ["personality", 23], ["background", 23], ["whodunnit", 22], ["wall", 22], ["narrator", 22], ["specialist", 21]]</script>
+<script>
+(function(){
+"use strict";
+
+var PROMPTS=[
+ {
+  "t": "Murder motives list",
+  "p": "Set a timer for 15 minutes. List as many specific murder motives as you can, each with named people and a situation (for example, [Person A] discovers that [Person B] has been [doing something] and [what happens next]). Avoid single words such as jealousy or greed.",
+  "n": "Chapter 1 idea: specific motives give you suspects and plots."
+ },
+ {
+  "t": "Three subgenre openings",
+  "p": "Write a 100-word opening for [a cosy village mystery], [a police procedural] and [a noir story], each beginning with a body found in the same place. Change the vocabulary, sentence length and detail to suit each subgenre.",
+  "n": "Shows how style and setting signal subgenre."
+ },
+ {
+  "t": "Four-channel setting",
+  "p": "Describe [a place] in 150 words using at least one visual detail, one sound, one smell or touch, and one measurement or comparison. Then underline each and note which channel you used least.",
+  "n": "Trains you to add the cues you normally skip."
+ },
+ {
+  "t": "Out-of-place body",
+  "p": "A body is found at [location]. Write a paragraph where the victim clearly does not belong there ([age, job, clothing]). List three questions the reader will ask.",
+  "n": "Settings suggest people; mismatches create tension."
+ },
+ {
+  "t": "Show, do not tell a trait",
+  "p": "Pick a trait: [cruel, vain, timid or generous]. Write a 200-word scene that shows it through one private action, one remark by another character and one reaction from someone else, without naming the trait.",
+  "n": "Practises revealing character through action and others’ views."
+ },
+ {
+  "t": "Three versions of the victim",
+  "p": "Write a short account of [the victim] as told by someone who loved them, someone who disliked them and the murderer. Note which facts each narrator stresses or leaves out.",
+  "n": "Truth depends on the speaker."
+ },
+ {
+  "t": "Register switch",
+  "p": "Rewrite this line in three registers (casual, informal information, formal instruction): [“Tell me what you saw last night”]. Then write a witness’s reply that shows [her social background] without heavy dialect.",
+  "n": "Chapter 4: match register to speaker and context."
+ },
+ {
+  "t": "Tagless dialogue test",
+  "p": "Write a 20-line dialogue between [Character A] and [Character B] with no speech tags. Make their voices distinct through vocabulary, rhythm and questions. Ask a friend to mark who is speaking.",
+  "n": "If readers can tell who speaks, the voices work."
+ },
+ {
+  "t": "Opening with a hint of unease",
+  "p": "Write the first paragraph of a story in which no crime has yet happened but something feels wrong for [character]. Give a concrete cause (an object, a sound or a face) and stop before it is explained.",
+  "n": "One of the opening techniques from the plotting chapter."
+ },
+ {
+  "t": "Clothes-line planning",
+  "p": "List the major incidents, low points and new characters in [your plot]. Place them on a line from 0 to 100 per cent of the book. Check there is something exciting or surprising in every stretch of about 15 per cent.",
+  "n": "Helps you avoid a sagging middle."
+ },
+ {
+  "t": "What if questions",
+  "p": "Write twelve what-if questions about [a scene in your plot], starting with [what if this person is lying about where they were]. Pick the answer that surprises you most and sketch the next scene.",
+  "n": "A way to restart a stalled plot."
+ },
+ {
+  "t": "Viewpoint swap",
+  "p": "Rewrite [a scene] from the point of view of [a different character]. Change what they notice, how they speak and what they choose not to think about. Keep all the facts the same.",
+  "n": "Style should follow the viewpoint character."
+ },
+ {
+  "t": "Calm, cold murder scene",
+  "p": "Write a murder in 100 words with all your emotion. Then rewrite it as a cold, factual account with numbers and no adjectives. Compare the effect.",
+  "n": "Uses the eye-of-god effect for a prologue."
+ },
+ {
+  "t": "Clue inventory",
+  "p": "List ten clues for [your plot]. Label each as overt, suspended, subtle, misdirection, misinformation, ambiguous, logical or message. Add a type you are missing and mark where each will appear.",
+  "n": "Aim for variety and good spacing."
+ },
+ {
+  "t": "Disguise a clue",
+  "p": "Rewrite this paragraph so that two of its four clues are hidden: [paragraph with four clues]. Use detail, an overt clue as cover and a short action beat after the clue.",
+  "n": "Think like a conjuror."
+ },
+ {
+  "t": "Fact-check list",
+  "p": "List every real-world fact in [your scene] (time of death, wound, journey time, historical detail). Mark each as sure, unsure or unknown, then plan where to check it and who to ask.",
+  "n": "Keeps research targeted."
+ },
+ {
+  "t": "Five-step outline",
+  "p": "Write one sentence about [your novel]. Expand the crime, then each suspect, then the sleuth’s path, each as short separate sentences. Shuffle them into a running order.",
+  "n": "A working outline for a mystery."
+ },
+ {
+  "t": "Synopsis draft",
+  "p": "Draft a one-page synopsis for [your novel]. Name the victim and sleuth, give each suspect a motive in one sentence, mention red herrings and false dawns, and finish by saying the crime is solved without revealing who did it.",
+  "n": "Synopsis is bait, not a full plot outline."
+ },
+ {
+  "t": "Covering letter",
+  "p": "Write a short polite letter to [agent’s name] enclosing the first three chapters and synopsis of [title], a [subgenre]. Say why you chose them and list any relevant publishing history, without extra biography.",
+  "n": "Keep it short, polite and professional."
+ }
+];
+
+var QUIZ=[
+ {
+  "q": "According to the book, which three habits does every writer really need?",
+  "o": [
+   "Persevere, practise and read",
+   "Plan, outline and research",
+   "Edit, submit and promote",
+   "Observe, imagine and network"
+  ],
+  "a": 0,
+  "e": "The opening chapter gives perseverance, daily practice and making time to read as the essentials."
+ },
+ {
+  "q": "Which is NOT one of the four central requirements of the genre?",
+  "o": [
+   "The novel is about a crime, preferably murder",
+   "The crime drives the plot",
+   "The author plays fair with the reader",
+   "The detective must be a professional police officer"
+  ],
+  "a": 3,
+  "e": "Sleuths can be professionals or amateurs. The four requirements are crime, crime as driving force, justice, and fair play."
+ },
+ {
+  "q": "What is the key difference between a mystery and a thriller?",
+  "o": [
+   "Thrillers are always shorter",
+   "Mysteries are about solving crimes; thrillers are about trying to prevent them",
+   "Mysteries need violence; thrillers do not",
+   "Thrillers have no victims"
+  ],
+  "a": 1,
+  "e": "In a thriller the reader knows the threat and the victim from the start, and the tension lies in whether it will be thwarted."
+ },
+ {
+  "q": "Why does the book suggest adding cues for several senses to descriptions?",
+  "o": [
+   "Readers imagine in different ways, so mixed cues reach more of them",
+   "Adjectives are forbidden in crime fiction",
+   "Editors require it",
+   "It makes the book longer"
+  ],
+  "a": 0,
+  "e": "The author argues that readers differ in how they imagine scenes, so using sight, sound, feeling and factual detail helps all of them."
+ },
+ {
+  "q": "What is a good way to hide a clue in a description?",
+  "o": [
+   "Put it in the first sentence",
+   "Place it in a detailed passage, about three-quarters through, without making it stand out",
+   "Say it twice",
+   "Write it in capitals"
+  ],
+  "a": 1,
+  "e": "Sustained description can lull readers into skimming, so a clue placed there tends to pass unnoticed."
+ },
+ {
+  "q": "How should most major and minor characters be treated in a whodunnit?",
+  "o": [
+   "Keep minor characters sketchy so the killer is obvious",
+   "Make several characters rounded, because any might be the murderer",
+   "Give only the sleuth a personality",
+   "Describe their looks in full on first appearance"
+  ],
+  "a": 1,
+  "e": "Because a minor character may turn out to be the killer, the line between major and minor is deliberately blurred."
+ },
+ {
+  "q": "What is a walk-on character?",
+  "o": [
+   "The killer in disguise",
+   "A person who appears only for their job and needs at most one memorable trait",
+   "A sidekick",
+   "A narrator"
+  ],
+  "a": 1,
+  "e": "Walk-ons such as taxi drivers or receptionists can be any person doing the job, so they need little development."
+ },
+ {
+  "q": "What does the “tagless test” for dialogue check?",
+  "o": [
+   "Whether punctuation is right",
+   "Whether you can tell who is speaking without speech tags",
+   "Whether adverbs are used",
+   "Whether the dialogue is long enough"
+  ],
+  "a": 1,
+  "e": "If the speakers stay distinct when the tags are removed, the voices are individual enough."
+ },
+ {
+  "q": "Which register should most dialogue imitate?",
+  "o": [
+   "Formal and literary",
+   "Casual and informative, with a few cues rather than heavy dialect",
+   "Intimate private language",
+   "Technical jargon"
+  ],
+  "a": 1,
+  "e": "Nobody really speaks in formal written English, so dialogue borrows lighter features of casual and informative speech."
+ },
+ {
+  "q": "Where should a crime novel usually begin?",
+  "o": [
+   "With the full back story",
+   "With the crime or threat, or at least a hint of it",
+   "With a map of the setting",
+   "With the solution"
+  ],
+  "a": 1,
+  "e": "The book advises starting with the crime or threat and delivering any back story later through witnesses and confidants."
+ },
+ {
+  "q": "What is the “clothes line” effect?",
+  "o": [
+   "A way to hide clues",
+   "Spaced incidents, low points and new elements that keep tension taut between the beginning and end",
+   "A rule for chapter length",
+   "A style of ending"
+  ],
+  "a": 1,
+  "e": "The start and the solution hold the line up at each end, and “props” in the middle stop it sagging."
+ },
+ {
+  "q": "How many viewpoint characters does the book suggest for a scene?",
+  "o": [
+   "As many as needed",
+   "Only one per scene, and two or three in the whole novel",
+   "None; use an all-knowing narrator",
+   "Exactly two per chapter"
+  ],
+  "a": 1,
+  "e": "Use one viewpoint per scene and generally two or three viewpoint characters across a novel."
+ },
+ {
+  "q": "Which statement about the author’s voice and lies is correct?",
+  "o": [
+   "The narrator may freely lie to the reader",
+   "Only characters may lie; the author’s voice must stay trustworthy",
+   "Lies are not allowed in crime fiction",
+   "Only the sleuth may lie"
+  ],
+  "a": 1,
+  "e": "Misinformation comes from characters. Anything in the author’s voice, including first-person narration, must be reliable."
+ },
+ {
+  "q": "What does the 50 per cent research rule mean?",
+  "o": [
+   "Spend half your time researching",
+   "Know about half as much again as you use, and keep a third in reserve",
+   "Use half of all sources",
+   "Check half the facts"
+  ],
+  "a": 1,
+  "e": "Know about 50 per cent more than you tell, so you are confident but do not lecture the reader."
+ },
+ {
+  "q": "What does the book advise for spot research while you are writing?",
+  "o": [
+   "Stop immediately and check",
+   "Mark the gap, keep writing and check later",
+   "Skip the fact entirely",
+   "Ask the reader"
+  ],
+  "a": 1,
+  "e": "Isolated facts are marked with a placeholder and checked later, so they do not break the flow of writing."
+ },
+ {
+  "q": "What should you do before submitting to an agent?",
+  "o": [
+   "Send three chapters of an unfinished book",
+   "Finish the whole novel first",
+   "Post the whole book with no letter",
+   "Send photographs of yourself"
+  ],
+  "a": 1,
+  "e": "Agents and publishers may ask for the rest immediately, and a crime plot must be seen to be sustained."
+ },
+ {
+  "q": "What does the book advise about a synopsis?",
+  "o": [
+   "It should be long and reveal every twist",
+   "It should be short, show characters and conflict, and not give away the killer",
+   "It is unnecessary",
+   "It should be written first and never changed"
+  ],
+  "a": 1,
+  "e": "The synopsis is bait: brief, lively and leaving the solution to be discovered."
+ }
+];
+
+var CHECK=[
+ "I have finished the whole novel, not just three chapters.",
+ "I have done a technical edit for spelling, punctuation and consistency.",
+ "My real-world facts (timings, forensics, places, history) are checked.",
+ "My synopsis is short, names the victim and sleuth, and does not give away the culprit.",
+ "I have chosen agents who handle my kind of crime and followed their guidelines.",
+ "My package is tidy: title page, first three chapters, synopsis, short polite letter, return postage."
+];
+
+var MIND={
+ "center": "Writing crime fiction",
+ "right": [
+  {
+   "t": "Genre",
+   "c": 1,
+   "k": [
+    "Mystery or thriller",
+    "Four requirements",
+    "Subgenres",
+    "Write what you read"
+   ]
+  },
+  {
+   "t": "Settings",
+   "c": 2,
+   "k": [
+    "Time and place",
+    "Four channels",
+    "Few adjectives",
+    "Closed worlds"
+   ]
+  },
+  {
+   "t": "Characters",
+   "c": 3,
+   "k": [
+    "Show, don’t tell",
+    "Major, minor, walk-on",
+    "Flawed villains",
+    "Consistent detail"
+   ]
+  },
+  {
+   "t": "Dialogue",
+   "c": 4,
+   "k": [
+    "Part of the action",
+    "Register",
+    "Distinct voices",
+    "Plain speech tags"
+   ]
+  },
+  {
+   "t": "Plot",
+   "c": 1,
+   "k": [
+    "Start with crime",
+    "Clothes line",
+    "Subplots",
+    "Chapter breaks"
+   ]
+  }
+ ],
+ "left": [
+  {
+   "t": "Viewpoint",
+   "c": 2,
+   "k": [
+    "First or third person",
+    "One per scene",
+    "Eye-of-god sparingly"
+   ]
+  },
+  {
+   "t": "Clues",
+   "c": 3,
+   "k": [
+    "Play fair",
+    "Many clue types",
+    "Conjuror’s tricks",
+    "Eight traps"
+   ]
+  },
+  {
+   "t": "Facts",
+   "c": 4,
+   "k": [
+    "Background research",
+    "Spot research",
+    "50 per cent rule",
+    "Hint if unsure"
+   ]
+  },
+  {
+   "t": "Revision",
+   "c": 1,
+   "k": [
+    "Cut, don’t add",
+    "Read aloud",
+    "Technical edit",
+    "Beat writer’s block"
+   ]
+  },
+  {
+   "t": "Submission",
+   "c": 2,
+   "k": [
+    "Finish first",
+    "Find an agent",
+    "Synopsis",
+    "Handle rejection"
+   ]
+  }
+ ]
+};
+
+function $(id){return document.getElementById(id);}
+function store(k,v){try{if(v===undefined){return localStorage.getItem(k);}localStorage.setItem(k,v);}catch(e){return null;}}
+
+/* theme */
+var themeBtn=$("themeBtn");
+function applyTheme(t){
+ if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}else{document.documentElement.removeAttribute("data-theme");}
+ themeBtn.textContent="Theme: "+(t==="light"||t==="dark"?t:"auto");
+}
+var savedTheme=store("crimecomp-theme");
+applyTheme(savedTheme);
+themeBtn.addEventListener("click",function(){
+ var cur=document.documentElement.getAttribute("data-theme");
+ var next=cur==="light"?"dark":(cur==="dark"?"auto":"light");
+ applyTheme(next);store("crimecomp-theme",next);drawMind();
+});
+
+/* tabs */
+var tabs=Array.prototype.slice.call(document.querySelectorAll("[role=tab]"));
+function showTab(h,focus,noHash){
+ var found=false;
+ tabs.forEach(function(t){
+  var on=t.getAttribute("data-hash")===h;
+  if(on){found=true;}
+  t.setAttribute("aria-selected",on?"true":"false");
+  t.setAttribute("tabindex",on?"0":"-1");
+  var p=$(t.getAttribute("aria-controls"));
+  if(on){p.classList.add("active");}else{p.classList.remove("active");}
+  if(on&&focus){t.focus();}
+ });
+ if(!found){showTab("summary",false,true);return;}
+ if(!noHash){try{history.replaceState(null,"","#"+h);}catch(e){location.hash=h;}}
+ if(h==="visuals"){drawMind();}
+}
+tabs.forEach(function(t,i){
+ t.addEventListener("click",function(){showTab(t.getAttribute("data-hash"),false);});
+ t.addEventListener("keydown",function(e){
+  var j=-1;
+  if(e.key==="ArrowRight"){j=(i+1)%tabs.length;}
+  else if(e.key==="ArrowLeft"){j=(i-1+tabs.length)%tabs.length;}
+  else if(e.key==="Home"){j=0;}
+  else if(e.key==="End"){j=tabs.length-1;}
+  if(j>=0){e.preventDefault();showTab(tabs[j].getAttribute("data-hash"),true);}
+ });
+});
+window.addEventListener("hashchange",function(){showTab((location.hash||"#summary").slice(1),false,true);});
+
+/* jump links in summary */
+Array.prototype.forEach.call(document.querySelectorAll("[data-jump]"),function(a){
+ a.addEventListener("click",function(e){
+  e.preventDefault();
+  var el=$(a.getAttribute("data-jump"));
+  if(el&&el.scrollIntoView){el.scrollIntoView({behavior:"smooth",block:"start"});}
+ });
+});
+
+/* checklist */
+var saved={};
+try{saved=JSON.parse(store("crimecomp-check")||"{}")||{};}catch(e){saved={};}
+var cl=$("checklist");
+CHECK.forEach(function(txt,i){
+ var li=document.createElement("li");
+ var cb=document.createElement("input");cb.type="checkbox";cb.id="chk"+i;cb.checked=!!saved[i];
+ cb.addEventListener("change",function(){saved[i]=cb.checked;store("crimecomp-check",JSON.stringify(saved));});
+ var lb=document.createElement("label");lb.setAttribute("for","chk"+i);lb.textContent=txt;
+ li.appendChild(cb);li.appendChild(lb);cl.appendChild(li);
+});
+$("printBtn").addEventListener("click",function(){showTab("cheat",false);window.print();});
+
+/* prompts */
+function copyText(text,btn){
+ function done(){var o=btn.textContent;btn.textContent="Copied";setTimeout(function(){btn.textContent=o;},1400);}
+ if(navigator.clipboard&&navigator.clipboard.writeText){
+  navigator.clipboard.writeText(text).then(done,function(){fallback();});
+ }else{fallback();}
+ function fallback(){
+  var ta=document.createElement("textarea");ta.value=text;ta.setAttribute("readonly","");
+  ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
+  try{document.execCommand("copy");done();}catch(e){}
+  document.body.removeChild(ta);
+ }
+}
+var pl=$("promptList");
+PROMPTS.forEach(function(p,i){
+ var card=document.createElement("div");card.className="card";
+ var head=document.createElement("div");head.className="prompt-head";
+ var h=document.createElement("h3");h.textContent=(i+1)+". "+p.t;
+ var tag=document.createElement("span");tag.className="tag";tag.textContent="prompt";h.appendChild(tag);
+ var b=document.createElement("button");b.type="button";b.className="btn noprint";b.textContent="Copy";
+ b.setAttribute("aria-label","Copy prompt "+(i+1)+": "+p.t);
+ b.addEventListener("click",function(){copyText(p.p,b);});
+ head.appendChild(h);head.appendChild(b);
+ var pre=document.createElement("div");pre.className="prompt";pre.textContent=p.p;
+ var n=document.createElement("p");n.className="note";n.textContent=p.n;
+ card.appendChild(head);card.appendChild(pre);card.appendChild(n);pl.appendChild(card);
+});
+
+/* quiz */
+var answered=0,score=0;
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function updateScore(){
+ $("scoreText").textContent="Score: "+score+" of "+answered+" answered ("+QUIZ.length+" questions)";
+ var r=$("quizResult");
+ if(answered===QUIZ.length){r.style.display="block";r.textContent="Finished. You scored "+score+" out of "+QUIZ.length+".";}
+ else{r.style.display="none";}
+}
+function buildQuiz(){
+ var ql=$("quizList");ql.innerHTML="";answered=0;score=0;
+ QUIZ.forEach(function(item,qi){
+  var box=document.createElement("div");box.className="q";
+  var h=document.createElement("h3");h.textContent=(qi+1)+". "+item.q;box.appendChild(h);
+  var idx=shuffle(item.o.map(function(_,i){return i;}));
+  var btns=[];
+  idx.forEach(function(oi){
+   var b=document.createElement("button");b.type="button";b.className="opt";b.textContent=item.o[oi];b.setAttribute("data-i",oi);
+   b.addEventListener("click",function(){
+    if(box.classList.contains("done")){return;}
+    box.classList.add("done");answered++;
+    if(oi===item.a){score++;b.classList.add("right");}
+    else{b.classList.add("wrong");}
+    btns.forEach(function(x){x.disabled=true;if(+x.getAttribute("data-i")===item.a){x.classList.add("right");}});
+    updateScore();
+   });
+   btns.push(b);box.appendChild(b);
+  });
+  var ex=document.createElement("p");ex.className="expl";ex.textContent=item.e;box.appendChild(ex);
+  ql.appendChild(box);
+ });
+ updateScore();
+}
+$("restartBtn").addEventListener("click",function(){buildQuiz();try{window.scrollTo(0,0);}catch(e){}});
+buildQuiz();
+
+/* word cloud */
+(function(){
+ var data=[];
+ try{data=JSON.parse($("cloudData").textContent);}catch(e){data=[];}
+ var box=$("cloud");var n=data.length;if(!n){return;}
+ var max=data[0][1],min=data[n-1][1];
+ var items=data.map(function(d,i){return {w:d[0],c:d[1],i:i,k:(i*29+7)%n};});
+ items.sort(function(a,b){return a.k-b.k;});
+ items.forEach(function(it){
+  var s=document.createElement("span");
+  var f=(Math.sqrt(it.c)-Math.sqrt(min))/((Math.sqrt(max)-Math.sqrt(min))||1);
+  s.style.fontSize=(0.95+f*2.55).toFixed(2)+"rem";
+  s.className="w"+(it.i%4);s.textContent=it.w;s.setAttribute("role","listitem");s.setAttribute("tabindex","0");
+  s.title=it.w+": "+it.c;box.appendChild(s);
+ });
+})();
+
+/* mindmap */
+function drawMind(){
+ var box=$("mind");if(!box){return;}
+ var NS="http://www.w3.org/2000/svg";
+ var cwid=7.4;
+ function tw(s){return Math.ceil(s.length*cwid+22);}
+ function side(arr){var b=0,l=0;arr.forEach(function(x){b=Math.max(b,tw(x.t)+8);x.k.forEach(function(k){l=Math.max(l,tw(k));});});return {b:b,l:l};}
+ var R=side(MIND.right),L=side(MIND.left);
+ var centerW=Math.max(tw(MIND.center)+20,180),gapC=46,gapB=34,pad=16;
+ var rightW=gapC+R.b+gapB+R.l,leftW=gapC+L.b+gapB+L.l;
+ var W=pad+leftW+centerW+rightW+pad;
+ var cx=pad+leftW+centerW/2;
+ function layout(arr){
+  var y=pad,out=[];
+  arr.forEach(function(b){
+   var h=Math.max(36,b.k.length*30);
+   out.push({b:b,top:y,h:h,cy:y+h/2});
+   y+=h+18;
+  });
+  return {rows:out,total:y-18+pad};
+ }
+ var LR=layout(MIND.right),LL=layout(MIND.left);
+ var H=Math.max(LR.total,LL.total,120);
+ var cy=H/2;
+ function offset(l){return (H-l.total)/2;}
+ var svg=document.createElementNS(NS,"svg");
+ svg.setAttribute("viewBox","0 0 "+W+" "+H);
+ svg.setAttribute("role","img");
+ var names=MIND.right.concat(MIND.left).map(function(x){return x.t;}).join(", ");
+ svg.setAttribute("aria-label","Mindmap of the book with the central topic "+MIND.center+" and branches: "+names);
+ function el(name,attrs,text){var e=document.createElementNS(NS,name);for(var k in attrs){e.setAttribute(k,attrs[k]);}if(text!==undefined){e.textContent=text;}svg.appendChild(e);return e;}
+ function curve(x1,y1,x2,y2,cls){var xm=(x1+x2)/2;el("path",{d:"M"+x1+" "+y1+" C"+xm+" "+y1+","+xm+" "+y2+","+x2+" "+y2,"class":"conn "+cls});}
+ function rectText(x,y,w,h,cls,tcls,text){
+  el("rect",{x:x,y:y,width:w,height:h,rx:8,ry:8,"class":cls});
+  el("text",{x:x+w/2,y:y+h/2+4.5,"text-anchor":"middle","class":tcls},text);
+ }
+ function drawSide(lay,dir,S){
+  var off=offset(lay);
+  lay.rows.forEach(function(r){
+   var b=r.b,cyb=r.cy+off,bw=S.b;
+   var bx=dir>0?cx+centerW/2+gapC:cx-centerW/2-gapC-bw;
+   var startX=dir>0?cx+centerW/2:cx-centerW/2;
+   var endX=dir>0?bx:bx+bw;
+   curve(startX,cy,endX,cyb,"cn"+b.c);
+   rectText(bx,cyb-18,bw,36,"mb m"+b.c,"mtext b",b.t);
+   var leafTop=r.top+off+(r.h-b.k.length*30)/2;
+   b.k.forEach(function(k,i){
+    var lw=tw(k),ly=leafTop+i*30+15;
+    var lx=dir>0?bx+bw+gapB:bx-gapB-lw;
+    var sx=dir>0?bx+bw:bx;
+    var ex=dir>0?lx:lx+lw;
+    curve(sx,cyb,ex,ly,"cn"+b.c);
+    rectText(lx,ly-13,lw,26,"ml m"+b.c,"mtext",k);
+   });
+  });
+ }
+ drawSide(LR,1,R);drawSide(LL,-1,L);
+ rectText(cx-centerW/2,cy-22,centerW,44,"mc","mtext c",MIND.center);
+ box.innerHTML="";box.appendChild(svg);
+}
+
+showTab((location.hash||"#summary").slice(1),false,true);
+})();
+</script>
+</body>
+</html>
